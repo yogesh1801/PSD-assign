@@ -11,6 +11,9 @@ const noteSchema = new Schema({
         required : true,
         trim : true
     },
+    tags : {
+        type : String
+    },
     createdBy : {
         type : mongoose.Schema.Types.ObjectId,
         ref : "User"
